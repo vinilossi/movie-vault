@@ -1,0 +1,63 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-card {
+  background-color: var(--card-bg-color);
+  display: flex;
+  width: 80%;
+  align-items: center;
+  padding: 46px 24px;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 64px;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.movie-info__metadata {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-info__metadata_title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.rate-icon {
+  width: 20px;
+}
+
+.movie-info__metadata_rating {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  align-items: center;
+  margin-top: 24px;
+  margin-right: 78px;
+}
+
+.movie-info-star-rating,
+.movie-info-favorite-add {
+  display: flex;
+  gap: 12px;
+}
+
+.movie-info__poster_img {
+  width: 139px;
+  height: 139px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.movie-info__synopsis_text {
+  color: var(--secondary-text-color);
+  line-height: 177%;
+}
