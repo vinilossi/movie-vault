@@ -6,19 +6,47 @@ header {
     margin-top: 62px;
 }
 
-#search-movie {
+.search-bar {
+    position: relative;
+    width: 634px;
+    max-width: 100%; 
     margin-top: 48px;
     margin-bottom: 30px;
-    padding: 24px 26px;
-    width: 634px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search-movie {
+    width: 100%;
+    padding: 24px 60px 24px 26px; 
     border: none;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.2);
     color: var(--primary-text-color);
+    box-sizing: border-box;
+    outline: none;
 }
 
 #search-movie::placeholder {
     color: var(--primary-text-color);
+}
+
+#search-movie::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.search-btn {
+    position: absolute;
+    right: 24px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    background: transparent;
+    border: none;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    padding: 0;
+    display: flex;
 }
 
 #search-movie:focus {
@@ -54,3 +82,4 @@ input[type="checkbox"]:checked::after {
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
+
