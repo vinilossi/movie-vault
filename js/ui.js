@@ -3,6 +3,8 @@ movieCards.innerHTML = "";
 
 function createMovieCard(movie) {
 
+
+function createMovieCard(movie) {
   const movieCard = document.createElement("section");
   movieCard.classList.add("movie-card");
 
@@ -82,4 +84,5 @@ function createMovieCard(movie) {
   movieCards.appendChild(movieCard);
 }
 
+export default createMovieCard;
 export default createMovieCard;
