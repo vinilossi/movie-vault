@@ -4,6 +4,11 @@ main {
   justify-content: center;
 }
 
+.movie-cards {
+  display: flex;
+  flex-direction: column;
+}
+
 .movie-card {
   background-color: var(--card-bg-color);
   display: flex;

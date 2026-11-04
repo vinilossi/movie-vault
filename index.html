@@ -19,10 +19,23 @@
       </div>
       <div class="search-bar">
         <input
-          type="text"
+          type="search"
           id="search-movie"
           placeholder="Enter a movie to search for..."
         />
+        <button type="submit" class="search-btn" aria-label="Search">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+        </button>
       </div>
       <div class="filter">
         <label for="show-favorites">
@@ -31,45 +44,13 @@
         >
       </div>
     </header>
-    <main>
-      <section class="movie-card">
-        <div class="movie-info">
-          <div class="movie-info__poster">
-            <img
-              src="https://media.themoviedb.org/t/p/w300_and_h450_face/4rtsbE9aQ1qw4gv7yYwaNYfWFoS.jpg"
-              class="movie-info__poster_img"
-            />
-          </div>
-          <div class="movie-info__metadata">
-            <p class="movie-info__metadata_title">
-              Harry Potter and The Philosopher's Stone (2001)
-            </p>
-            <div class="movie-info__metadata_rating">
-              <div class="movie-info-star-rating">
-                <img class="rate-icon" src="img/Star.svg" alt="star icon" />
-                <p>9.4</p>
-              </div>
-              <div class="movie-info-favorite-add">
-                <img class="rate-icon" src="img/Heart.svg" alt="star icon" />
-                <p>Favorite</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="movie-info__synopsis">
-          <p class="movie-info__synopsis_text">
-            Harry Potter, an orphaned boy raised by his cruel relatives,
-            discovers on his eleventh birthday that he is a wizard and has been
-            accepted into Hogwarts School of Witchcraft and Wizardry. There, he
-            makes new friends, Ron Weasley and Hermione Granger, and learns
-            about his mysterious past and his connection to the dark wizard who
-            killed his parents. As Harry explores the magical world, the trio
-            uncovers a secret hidden within Hogwarts involving the legendary
-            Philosopher's Stone, leading them into a dangerous adventure that
-            will test their courage, friendship, and loyalty.
-          </p>
-        </div>
-      </section>
-    </main>
+    <main class="movie-cards"></main>
+    <footer>
+      Made with <3 by @vinilossi
+    </footer>
   </body>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="./js/api.js"></script>
+  <script type="module" src="./js/API_KEY.js"></script>
+  <script type="module" src="./js/search.js"></script>
 </html>
